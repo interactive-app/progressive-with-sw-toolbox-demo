@@ -1,0 +1,16 @@
+<nav-bar></nav-bar>
+
+<div class="container">
+
+    <div *ngFor="#b of buchungen" class="col-sm-4">
+
+        <div class="card">
+            <h2>{{b.flug.abflugort}} - {{b.flug.zielort}}</h2>
+            <p>FlugNr. {{b.flug.id}}</p>
+            <p>{{b.flug.datum.substr(0,10)}}</p>
+        </div>
+        
+    </div>    
+</div>
+
+
